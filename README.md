@@ -2,8 +2,6 @@
 
 **Local control center for AI agent skills.** Search, preview, and share across 15+ AI assistants — all from your terminal.
 
-![Skill Manager Screenshot](/screenshot.png)
-
 ## Features
 
 - **Unified Index** — Single command indexes all skills from 15+ AI assistants
