@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Skill Manager
 
-## Getting Started
+**Local control center for AI agent skills.** Search, preview, and share across 15+ AI assistants — all from your terminal.
 
-First, run the development server:
+![Skill Manager Screenshot](/screenshot.png)
+
+## Features
+
+- **Unified Index** — Single command indexes all skills from 15+ AI assistants
+- **Instant Search** — Fuzzy search across all skills by name, category, or content
+- **Skill Preview** — Read descriptions and code snippets before installing
+- **Cross-Agent Sharing** — Share skills between Claude, Cursor, Copilot, and more
+- **Export & Backup** — Portable archive export for your entire skill collection
+- **Zero Cloud** — No API calls, no tracking, works completely offline
+
+## Supported Agents
+
+Claude | Cursor | GitHub Copilot | Codeium | CodeWhisperer | Tabnine | Continue | Aider | OpenAI | Gemini | And more...
+
+## Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# Clone the repository
+git clone https://github.com/tetsuya-dev-jp/skill-manager-landing.git
+
+# Install dependencies
+pnpm install
+
+# Run development server
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) to see the landing page.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+├── app/
+│   ├── globals.css      # Global styles with Tailwind
+│   ├── layout.tsx       # Root layout with fonts
+│   └── page.tsx         # Main landing page
+├── components/
+│   └── sections/        # Page sections (Hero, Features, etc.)
+└── lib/
+    └── utils.ts         # Utility functions
+```
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js 15** — React framework
+- **TypeScript** — Type safety
+- **Tailwind CSS** — Styling
+- **IBM Plex Mono & JetBrains Mono** — Fonts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+MIT
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Made with Next.js and Tailwind CSS
